@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- 启动仿真环境 -->
+<include file="$(find akmbot_gazebo)/launch/akmbot.launch"/>
+
+<!-- 运行move_base节点 -->
+<include file="$(find akmbot_gazebo)/launch/teb_base.launch"/>
+
+
+<include file="$(find akmbot_gazebo)/launch/slam_gmapping.launch"/>
+
+<!-- 运行rviz -->
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find akmbot_gazebo)/rviz/nav.rviz"/>
+
+
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- 启动仿真环境 -->
+    <include file="$(find akmbot_gazebo)/launch/akmbot.launch"/>
+
+    <include file="$(find akmbot_gazebo)/launch/slam_gmapping.launch"/>
+
+    <!-- 启动rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find akmbot_gazebo)/rviz/gmapping.rviz"/>
+
+</launch>
