@@ -292,7 +292,7 @@
     <joint name="camera_joint" type="fixed">
         <parent link="base_link" />
         <child link="camera" />
-        <origin xyz="0.36 0.0022137 0.0975" />
+        <origin xyz="0.36 0.0022137 0.1" />
         <axis xyz="0 0 1" />
     </joint>
 
@@ -324,7 +324,7 @@
     <joint name="realsense_joint" type="fixed">
         <parent link="base_link" />
         <child link="real_sense" />
-        <origin xyz="0.4 0.0038046 0.052021" />
+        <origin xyz="0.4 0.0038046 0.05" />
         <axis xyz="0 0 1" />
     </joint>
 
@@ -355,7 +355,7 @@
     <joint name="lidar_joint" type="fixed">
         <parent link="base_link" />
         <child link="lidar" />
-        <origin xyz="0.25 0 0.12377" />
+        <origin xyz="0.25 0 0.18" />
         <axis xyz="0 0 1" />
     </joint>
 
