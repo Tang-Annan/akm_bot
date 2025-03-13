@@ -2,6 +2,14 @@
 
 将文件夹拷贝到工作空间 src 目录下，catkin_make，如果报错应该是没有安装依赖包，按编译提示安装即可。
 
+可能缺少的功能包
+```
+sudo apt-get install ros-noetic-ackermann-msgs
+sudo apt-get install ros-noetic-teb-local-planner
+sudo apt-get install ros-noetic-ros-control
+sudo apt-get install ros-noetic-ros-controllers
+```
+
 在终端输入 `roslaunch akmbot_gazebo teb_navigation.launch` 即可开始导航测试。  
 第一次打开 rviz 可能会卡住，关了重新打开一次就行。
 
@@ -39,7 +47,7 @@
 
 ### teb_base.launch
 
-启动 move_base 节点，里面设置了 teb 局部规划器，**全局规划器**没有设置，你改成你需要的
+启动 move_base 节点，里面设置了 teb 局部规划器，**全局规划器**没有设置，可以改成你需要的
 
 `<param name="base_global_planner" value="RAstarPlannerROS"/>`
 
@@ -49,7 +57,7 @@
 ### teb_navigation.launch
 
 导航功能  
-配置地图在这里修改`<arg name="map" default="room_mini.yaml" />`  
+配置**地图**在这里修改`<arg name="map" default="room_mini.yaml" />`  
 地图与akmbot_launch中的world文件对应
 
 ### gmapping.launch
