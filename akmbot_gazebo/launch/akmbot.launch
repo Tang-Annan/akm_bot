@@ -21,8 +21,8 @@
         	<arg name="paused" value="$(arg paused)"/>
         	<arg name="use_sim_time" value="$(arg use_sim_time)"/>
         	<arg name="headless" value="$(arg headless)"/>
-	        <arg name="world_name" value="$(find akmbot_gazebo)/worlds/room_mini.world"/>-
-	        <!--<arg name="world_name" value="$(find akmbot_gazebo)/worlds/30_30.world"/>->
+	        <arg name="world_name" value="$(find akmbot_gazebo)/worlds/room_mini.world"/>
+	        <!--<arg name="world_name" value="$(find akmbot_gazebo)/worlds/30_30.world"/>-->
                <!-- .world文件的地址-->
     	</include>
 
