@@ -385,7 +385,7 @@
     <joint name="imu_joint" type="fixed">
         <parent link="base_link" />
         <child link="imu" />
-        <origin xyz="0 0 0.02" />
+        <origin xyz="0 0 0.12" />
         <axis xyz="0 0 1" />
     </joint>
 
